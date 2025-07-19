@@ -1,3 +1,4 @@
+// JavaScript code to perform basic arithmetic operations and display results in HTML elements
 function addition_Function()    {
     var addition = 5 + 2;
     document.getElementById("Math_a").innerHTML = "5 + 2 = " + addition;
@@ -30,11 +31,20 @@ function all_Math_Function() {
 
 function negation_Operator() {
     var x = 10;
-    document.getElementById("negation").innerHTML = -x;
+    document.getElementById("negation").innerHTML = - x;
 }
 
 function increment_Operator() {
-    var x = 5;
-    x++;
-    document.getElementById("increment").innerHTML = "Incremented value of 5 is: " + x; 
+    var y = 5;
+    y++;
+    document.getElementById("increment").innerHTML = "Incremented value of 5 is: " + y;
 }
+
+function decrement_Operator() {
+    var y = 5;
+    y--;
+    document.getElementById("decrement").innerHTML = "Decremented value of 5 is: " + y;
+}
+
+// Function to display a random number between 0 and 100 to pop up an alert
+window.alert(Math.random() * 100);
